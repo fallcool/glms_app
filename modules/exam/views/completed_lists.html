@@ -1,0 +1,40 @@
+<ion-nav-bar class="bar-assertive" style="background-color: #B71C1C;" >
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    测验列表
+  </ion-nav-title>
+  <ion-nav-buttons side="right" >
+    <button class="button button-icon button-clear ion-android-more-vertical" ng-click="popover.show($event)"></button>
+  </ion-nav-buttons>
+</ion-nav-bar>
+<ion-view>
+  <ion-content class="has-header">
+    <div class="list">
+      <div class="row">
+        <div class="col col-50">
+          测验
+        </div>
+        <div class="col col-10">成绩</div>
+        <div class="col"> 操作</div>
+      </div>
+      <hr />
+      <div ng-repeat="tq in exams.completed" item="tq">
+        <div class="row" >
+          <div class="col col-50">
+            <h4>{{ tq.quiz.title }}</h4>
+            <p>{{ tq.started_at | date:'yy/M/dd H:m' }}</p>
+
+          </div>
+          <div class="col col-10">{{ tq.score }}</div>
+          <div class="col"> <button ng-click="take(tq.quiz.id)" class="button button-fab ink-dark button-calm">重考</button> <button ng-click="goStateWithParam('app.showQuiz',{id:tq.id})" class="button button-fab button-balanced">查卷</button></div>
+        </div>
+        <hr />
+      </div>
+
+
+    </div>
+  </ion-content>
+</ion-view>

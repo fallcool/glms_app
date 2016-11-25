@@ -1,0 +1,85 @@
+<ion-side-menus enable-menu-with-back-views="true">
+
+    <ion-side-menu-content>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-header-bar class="expanded">
+            <img ng-src="{{profile.avatar !==null && imageRoot+profile.avatar || imageRoot+'no_avatar.jpg'}}"
+                 class="avatar motion spin fade">
+            <div class="menu-bottom">
+                <h5 class="stable">{{profile.username}}</h5>
+                <span>欢迎进入勾股在线学习系统</span>
+            </div>
+        </ion-header-bar>
+
+        <ion-content has-header="true" class="stable-bg has-expanded-header">
+            <ion-list class="transparent">
+                <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
+                    课程
+                </ion-item>
+                <ion-item  class="yep item-icon-left" nav-clear menu-close ui-sref="app.courses">
+                    <i class="icon ion-speedometer"></i>
+                    课程列表
+                </ion-item>
+
+                <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
+                    考试
+                </ion-item>
+                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="app.exams">
+                    <i class="icon ion-person"></i>
+                    测验列表
+                </ion-item>
+                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="app.completed_exams">
+                  <i class="icon ion-person"></i>
+                  已完成测验列表
+                </ion-item>
+
+                <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
+                    Hardware Connect
+                </ion-item>
+                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.camera">
+                    <i class="icon ion-camera"></i>
+                    Camera
+                </ion-item>
+                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.barcode">
+                    <i class="icon ion-ios-barcode"></i>
+                    Bascode Scanner
+                </ion-item>
+                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.vibration">
+                    <i class="icon ion-asterisk"></i>
+                    Vibration
+                </ion-item>
+                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="admin.device">
+                    <i class="icon ion-information-circled"></i>
+                    Device Info
+                </ion-item>
+
+
+                <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
+                   OS Feature
+                </ion-item>
+                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="admin.sms">
+                    <i class="icon ion-android-textsms"></i>
+                    SMS
+                </ion-item>
+                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.contact">
+                    <i class="icon ion-android-contacts"></i>
+                    Contacts
+                </ion-item>
+                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="admin.push">
+                    <i class="icon ion-android-notifications"></i>
+                    Push Notification
+                </ion-item>
+
+                <ion-item class="yep item-icon-left" nav-clear menu-close data-signout data-target="#"
+                          class="transparent">
+                    <i class="icon ion-android-exit"></i>
+                    Sign out
+                </ion-item>
+            </ion-list>
+        </ion-content>
+
+    </ion-side-menu>
+</ion-side-menus>

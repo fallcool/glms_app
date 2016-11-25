@@ -1,0 +1,30 @@
+<ion-view title="LOGIN" hide-nav-bar="true" ng-controller="LoginCtrl">
+  <ion-content padding="true" class="manual-ios-statusbar-padding" scroll="false" style="background: url(img/bg.jpg) center; background-size: cover;">
+    <div class="hero no-header flat">
+      <div class="content">
+        <div class="app-icon"></div>
+        <h2 class="light">勾股在线学习系统</h2>
+      </div>
+    </div>
+    <form ng-submit="signin()" role="form" autocomplete="off">
+      <div class="list">
+        <div class="card" ng-if="signinError.data.error">
+          <div class="item item-text-wrap assertive">
+            <strong>错误: </strong> {{signinError.data.error}}
+            <br>请重试
+          </div>
+        </div>
+        <label class="item item-input item-floating-label">
+          <span class="input-label stable">用户名</span>
+          <input ng-model="user._username" type="text" placeholder="用户名" class="login-pl">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label stable">密码</span>
+          <input ng-model="user._password" type="password" placeholder="密码" class="login-pl">
+        </label>
+      </div>
+      <button type="submit" class="button button-full button-assertive ink">登录</button>
+    </form>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,47 @@
+<ion-nav-bar class="bar-assertive" style="background-color: #B71C1C;" >
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    课程详情
+  </ion-nav-title>
+  <ion-nav-buttons side="right" >
+    <button class="button button-icon button-clear ion-android-more-vertical" ng-click="popover.show($event)"></button>
+  </ion-nav-buttons>
+</ion-nav-bar>
+<ion-view>
+  <ion-content class="has-header">
+    <div class="bar bar-header bar-dark" style="position: static;">
+      <div class="buttons buttons-left header-item">
+                    <span class="left-buttons">
+                        <button class="button button-icon button-clear ion-ios-book-outline">
+                        </button>
+                    </span>
+      </div>
+      <div class="h1 title title-left light">{{course.course.title}}</div>
+      <div class="buttons buttons-right header-item">
+                    <span class="right-buttons">
+                        <button ng-click="take({{course.course.id}})" ng-show="course.sc == null" class="button button-energized-900 button-fab expanded button-energized-900 drop pane on">
+                            选课
+                        </button>
+                    </span>
+      </div>
+    </div>
+    <div class="im-wrapper">
+      <h5>{{course.course.intro}}</h5>
+    </div>
+
+    <div class="list">
+      <div ng-repeat="chapter in course.course.chapters" item="chapter">
+        {{chapter.title}}
+        <div ng-repeat="kejian in chapter.kejians" item="kejian" class="item item-button-right">
+          {{ kejian.title }}
+          <button class="button button button-balanced ink" ng-click="course.sc && goStateWithParam('app.showKejian', {id:kejian.id})">
+            阅读
+          </button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
