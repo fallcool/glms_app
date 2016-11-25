@@ -91,7 +91,7 @@
 	<feature name="http://api.phonegap.com/1.0/network"/> <!-- Enable internet access permission -->
 
 	<!-- Plugins that enable device-specific native funtionality. See online docs for more -->
-	<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />  <!-- For checking Internet connectivity -->
+	<gap:plugin name="org.apache.cordova.network-information" version="~1.3.0" />  <!-- For checking Internet connectivity -->
 	<plugin name="cordova-plugin-battery-status"      source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera"              source="npm" spec="~2.1.1" />
     <plugin name="cordova-plugin-media-capture"       source="npm" spec="~1.2.0" />
