@@ -18,11 +18,17 @@
           <h4 class="border-top"> {{tqq.question.title}}  <button ng-show="tqq.if_correct==true" class="button button-fab button-assertive">正确</button> <button ng-show="tqq.if_correct!==true" class="button button-fab button-dark">错误</button>
           </h4>
           <div ng-switch on="tqq.question.question_type">
-            <div ng-switch-default class="radio-container">
-              <md-radio-group ng-model="tqq.answer">
-                <md-radio-button disabled ng-repeat="choice in tqq.question.choices" item="choice" value="{{choice.id}}">{{choice.title}} <span ng-show="tqq.if_correct !== true && tqq.answer==tqq.question.correctAnswer">正确</span></md-radio-button>
-              </md-radio-group>
-            </div>
+
+              <div ng-model="tqq.answer" ng-switch-default class="item">
+                <div class="item" ng-repeat="choice in tqq.question.choices" item="choice">
+                  <label class="">
+                    <input disabled type="radio" ng-model="tqq.answer" ng-value="choice.id">
+                    {{choice.title}}<span ng-show="tqq.if_correct !== true && choice.id.toString() == tqq.question.correct_answer" class="badge ion-checkmark badge-assertive"> 正确</span>
+                  </label>
+
+                </div>
+
+
             <div ng-switch-when="多选题" class="checkbox-container" ng-model="tqq.answer">
               <div ng-repeat="choice in tqq.question.choices" item="choice" class="item item-checkbox">
                 <label class="checkbox">

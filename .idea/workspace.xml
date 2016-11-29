@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e3ee66-ee1b-4d19-9de4-fd1bb534550b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icon.png" afterPath="$PROJECT_DIR$/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/views/lists.html" afterPath="$PROJECT_DIR$/modules/course/views/lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/views/myLists.html" afterPath="$PROJECT_DIR$/modules/course/views/myLists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/views/show.html" afterPath="$PROJECT_DIR$/modules/course/views/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/completed_lists.html" afterPath="$PROJECT_DIR$/modules/exam/views/completed_lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/lists.html" afterPath="$PROJECT_DIR$/modules/exam/views/lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/questions.html" afterPath="$PROJECT_DIR$/modules/exam/views/questions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/takeQuestion.html" afterPath="$PROJECT_DIR$/modules/exam/views/takeQuestion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/showQuiz.html" afterPath="$PROJECT_DIR$/modules/exam/views/showQuiz.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/views/admin.html" afterPath="$PROJECT_DIR$/shared/views/admin.html" />
     </list>
     <ignored path="glms_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,18 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showKejian.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/course/views/showKejian.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#button#0;n#ion-nav-buttons#0;n#ion-nav-bar#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="completed_lists.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/exam/views/completed_lists.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,8 +39,8 @@
       <file leaf-file-name="takeQuestion.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/exam/views/takeQuestion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="299">
+              <caret line="27" column="18" selection-start-line="20" selection-start-column="10" selection-end-line="27" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -88,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myLists.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myLists.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/course/views/myLists.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -123,11 +103,21 @@
       <file leaf-file-name="showQuiz.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/exam/views/showQuiz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="532">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#ion-nav-bar#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shared/views/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,12 +145,10 @@
         <option value="$PROJECT_DIR$/modules/exam/controllers/ExamCompletedListCtrl.js" />
         <option value="$PROJECT_DIR$/modules/exam/controllers/ExamListCtrl.js" />
         <option value="$PROJECT_DIR$/modules/course/controllers/CourseListCtrl.js" />
-        <option value="$PROJECT_DIR$/modules/exam/views/showQuiz.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/modules/course/views/showKejian.html" />
         <option value="$PROJECT_DIR$/modules/exam/controllers/QuestionTakeCtrl.js" />
         <option value="$PROJECT_DIR$/modules/exam/services/ExamService.js" />
-        <option value="$PROJECT_DIR$/shared/views/admin.html" />
         <option value="$PROJECT_DIR$/modules/course/services/CourseService.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/modules/course/controllers/MyCourseListCtrl.js" />
@@ -176,6 +164,8 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/modules/exam/views/takeQuestion.html" />
         <option value="$PROJECT_DIR$/modules/course/views/myLists.html" />
+        <option value="$PROJECT_DIR$/modules/exam/views/showQuiz.html" />
+        <option value="$PROJECT_DIR$/shared/views/admin.html" />
       </list>
     </option>
   </component>
@@ -583,12 +573,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480305361259</updated>
       <workItem from="1480305364556" duration="16103000" />
-      <workItem from="1480386922513" duration="24460000" />
+      <workItem from="1480386922513" duration="25876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40563000" />
+    <option name="totallyTimeSpent" value="41979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1931" height="1056" extended-state="0" />
@@ -828,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/views/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="90" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ng-aa/ng-aa.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -902,26 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/exam/views/showQuiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#ion-nav-bar#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/exam/views/questions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="205" selection-start-line="17" selection-start-column="205" selection-end-line="17" selection-end-column="205" />
-          <folding>
-            <element signature="n#style#0;n#ion-nav-bar#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/exam/views/lists.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -934,14 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
           <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/exam/views/takeQuestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -968,6 +922,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/exam/views/questions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="205" selection-start-line="17" selection-start-column="205" selection-end-line="17" selection-end-column="205" />
+          <folding>
+            <element signature="n#style#0;n#ion-nav-bar#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/exam/views/takeQuestion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="27" column="18" selection-start-line="20" selection-start-column="10" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/exam/views/showQuiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#ion-nav-bar#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/views/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding />
         </state>
       </provider>
