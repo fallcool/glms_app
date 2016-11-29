@@ -113,7 +113,7 @@ app
          *
          *  ngAA Config
          */
-        $authProvider.signinUrl = webroot + 'api/login_check';
+        $authProvider.signinUrl = webroot + 'app_dev.php/api/login_check';
         $authProvider.signinState = 'login';
         $authProvider.signinRoute = '/login';
         $authProvider.signinTemplateUrl = 'shared/views/login.html';
@@ -124,7 +124,7 @@ app
          *
          * Restangular API URL
          */
-        RestangularProvider.setBaseUrl(webroot + 'api');
+        RestangularProvider.setBaseUrl(webroot + 'app_dev.php/api');
         /* force Restangular's getList to work with Laravel 5's pagination object  */
         RestangularProvider.addResponseInterceptor(parseApiResponse);
         function parseApiResponse(data, operation) {
@@ -163,24 +163,42 @@ app
                 controller: 'AdminCtrl',
                 templateUrl: 'shared/views/admin.html'
             })
-          .state('app.courses', {
-            url: "/courses",
-            views: {
-              'menuContent': {
-                templateUrl: "modules/course/views/lists.html",
-                controller: 'CourseListCtrl'
-              }
-            },
-            cache: false,
-            resolve: {
-              resolvedItems: ['CourseService',
-                function (CourseService) {
-                  return CourseService.cachedList().then(function (data) {
-                    return data;
-                  });
-                }]
-            }
-          })
+              .state('app.courses', {
+                url: "/courses",
+                views: {
+                  'menuContent': {
+                    templateUrl: "modules/course/views/lists.html",
+                    controller: 'CourseListCtrl'
+                  }
+                },
+                cache: false,
+                resolve: {
+                  resolvedItems: ['CourseService',
+                    function (CourseService) {
+                      return CourseService.cachedList().then(function (data) {
+                        return data;
+                      });
+                    }]
+                }
+              })
+            .state('app.mycourses', {
+                url: "/mycourses",
+                views: {
+                    'menuContent': {
+                        templateUrl: "modules/course/views/myLists.html",
+                        controller: 'MyCourseListCtrl'
+                    }
+                },
+                cache: false,
+                resolve: {
+                    resolvedItems: ['CourseService',
+                        function (CourseService) {
+                            return CourseService.myList().then(function (data) {
+                                return data;
+                            });
+                        }]
+                }
+            })
           .state('app.showCourse', {
             url: "/course/:id",
             views: {

@@ -33,6 +33,13 @@ angular.module('ng-laravel').service('CourseService', function($rootScope, $stat
         return data;
     };
 
+    this.myList = function() {
+        // GET /api/course
+        var data = Restangular.all('my/course/list').customGET('');;
+        //coursesCache.put('list',data);
+        return data;
+    };
+
 
     /*
      * Pagination change

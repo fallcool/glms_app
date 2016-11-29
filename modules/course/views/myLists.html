@@ -1,0 +1,24 @@
+<ion-nav-bar class="bar-assertive" style="background-color: #B71C1C;" >
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    课程列表
+  </ion-nav-title>
+</ion-nav-bar>
+<ion-view>
+  <ion-content class="has-header">
+    <div class="list" ng-repeat="sc in scs.entities" item="sc">
+      <div ui-sref="app.showCourse({id:sc.course.id})" class="card card-gallery item item-text-wrap">
+        <div class="ink dark-bg">
+          <img class="full-image" src="{{imageRoot + sc.course.image}}">
+          <h2>{{sc.course.title}}</h2>
+        </div>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
+

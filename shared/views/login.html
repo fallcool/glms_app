@@ -8,9 +8,9 @@
     </div>
     <form ng-submit="signin()" role="form" autocomplete="off">
       <div class="list">
-        <div class="card" ng-if="signinError.data.error">
+        <div class="card" ng-if="signinError.data.message">
           <div class="item item-text-wrap assertive">
-            <strong>错误: </strong> {{signinError.data.error}}
+            <strong>错误: </strong> 用户名或密码错误
             <br>请重试
           </div>
         </div>

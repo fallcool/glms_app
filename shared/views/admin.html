@@ -10,7 +10,7 @@
                  class="avatar motion spin fade">
             <div class="menu-bottom">
                 <h5 class="stable">{{profile.username}}</h5>
-                <span>欢迎进入勾股在线学习系统</span>
+                <span>欢迎进入</span>
             </div>
         </ion-header-bar>
 
@@ -22,6 +22,10 @@
                 <ion-item  class="yep item-icon-left" nav-clear menu-close ui-sref="app.courses">
                     <i class="icon ion-speedometer"></i>
                     课程列表
+                </ion-item>
+                <ion-item  class="yep item-icon-left" nav-clear menu-close ui-sref="app.mycourses">
+                    <i class="icon ion-speedometer"></i>
+                    我的课程
                 </ion-item>
 
                 <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
@@ -36,47 +40,11 @@
                   已完成测验列表
                 </ion-item>
 
-                <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
-                    Hardware Connect
-                </ion-item>
-                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.camera">
-                    <i class="icon ion-camera"></i>
-                    Camera
-                </ion-item>
-                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.barcode">
-                    <i class="icon ion-ios-barcode"></i>
-                    Bascode Scanner
-                </ion-item>
-                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.vibration">
-                    <i class="icon ion-asterisk"></i>
-                    Vibration
-                </ion-item>
-                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="admin.device">
-                    <i class="icon ion-information-circled"></i>
-                    Device Info
-                </ion-item>
-
-
-                <ion-item class="assertive" menu-close nav-clear href="#" data-target="">
-                   OS Feature
-                </ion-item>
-                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="admin.sms">
-                    <i class="icon ion-android-textsms"></i>
-                    SMS
-                </ion-item>
-                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="admin.contact">
-                    <i class="icon ion-android-contacts"></i>
-                    Contacts
-                </ion-item>
-                <ion-item class="yep item-icon-left" nav-clear menu-close ui-sref="admin.push">
-                    <i class="icon ion-android-notifications"></i>
-                    Push Notification
-                </ion-item>
 
                 <ion-item class="yep item-icon-left" nav-clear menu-close data-signout data-target="#"
                           class="transparent">
                     <i class="icon ion-android-exit"></i>
-                    Sign out
+                    退出登录
                 </ion-item>
             </ion-list>
         </ion-content>
