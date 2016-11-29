@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module('ng-laravel');
-app.controller('CourseShowCtrl',function($scope,CourseService,$http,$rootScope,$stateParams,$filter,$cordovaCamera,$cordovaImagePicker,$ionicPlatform,$cordovaFileTransfer,ionicToast,resolvedItems,htmlValidationError){
+app.controller('CourseShowCtrl',function($scope,CourseService, $http,$rootScope,$stateParams,$filter,$cordovaCamera,$cordovaImagePicker,$ionicPlatform,$cordovaFileTransfer,ionicToast,resolvedItems,htmlValidationError){
 
 
     /*
@@ -25,6 +25,19 @@ app.controller('CourseShowCtrl',function($scope,CourseService,$http,$rootScope,$
         CourseService.take(id).then(function (data) {
           $window.location.reload();
       });
+    }
+
+    $scope.showKejian = function(kejian) {
+        if (typeof kejian.pdf !== 'undefined'  ) {
+            var ref = window.open(
+                $rootScope.webRoot
+                + 'kejian/' + kejian.id + '/pdf',
+                '_blank',
+                'location=no,closebuttoncaption=Close,enableViewportScale=yes');
+        } else {
+            $rootScope.goStateWithParam('app.showKejian', {id:kejian.id});
+        }
+
     }
 
     /*

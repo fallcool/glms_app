@@ -38,17 +38,7 @@ app.controller('ExamListCtrl', function ($scope, ExamService, resolvedItems,$roo
 
     $scope.take = function(id) {
         //alert(id);
-        ExamService.take(id).then(function (data) {
-            $rootScope.tqId = data.id;
-            $rootScope.tqqs = data.testerQuizQuestions;
-            $rootScope.timeleft = data.timer;
-            $rootScope.quiz = data.quiz;
-            console.log($rootScope.timeleft);
-            //$scope.exams = data;
-            //$scope.pagination = $scope.exams.metadata;
-            //alert(data.timer);
-            $rootScope.goStateWithParam('app.takeQuestion', {id:0});
-        });
+        ExamService.take(id);
 
     }
 

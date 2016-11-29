@@ -1,14 +1,11 @@
 <ion-nav-bar class="bar-assertive" style="background-color: #B71C1C;" >
   <ion-nav-buttons side="left">
-    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-    </button>
+    <button class="button back-button buttons no-text button-clear header-item" ng-click="goBack()" style=""><i class="icon ion-ios-arrow-back"></i>
+      <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Login</span></span></button>
   </ion-nav-buttons>
   <ion-nav-title>
     课件内容
   </ion-nav-title>
-  <ion-nav-buttons side="right" >
-    <button class="button button-icon button-clear ion-android-more-vertical" ng-click="popover.show($event)"></button>
-  </ion-nav-buttons>
 </ion-nav-bar>
 <ion-view>
   <ion-content class="has-header">
@@ -17,6 +14,12 @@
     </div>
     <div class="im-wrapper" ng-bind-html="kejian.entity.body">
 
+    </div>
+
+    <div ng-show="kejian.entity.video_link !== undefined">
+      <video  src="{{ kejian.entity.video_link }}" width="100%" controls="controls">
+        您的浏览器不支持 video 标签。
+      </video>
     </div>
 
 

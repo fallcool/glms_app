@@ -25,6 +25,8 @@ app.controller('QuestionTakeCtrl',function($scope, QuestionService, ExamService,
         })
     }
 
+
+
     //$scope.form= resolvedItems.form.children;
     //$scope.form.answer = $scope.tq.answer;
     console.log($scope.tqq);
@@ -40,12 +42,15 @@ app.controller('QuestionTakeCtrl',function($scope, QuestionService, ExamService,
     //scope.choices = resolvedItems.entity.question.choices;
 
     $scope.submit = function() {
-        console.log($scope.tqq);
-        var answers = new Array();
-        angular.forEach($scope.tqq.question.choices, function(choice, key) {
-            if (choice.checked == true ) answers.push(choice.id);
-        });
-        $scope.tqq.answer = answers.join(',');
+        if ($scope.tqq.question.question_type == '多选题') {
+            console.log($scope.tqq);
+            var answers = new Array();
+            angular.forEach($scope.tqq.question.choices, function(choice, key) {
+                if (choice.checked == true ) answers.push(choice.id);
+            });
+            $scope.tqq.answer = answers.join(',');
+        }
+
         console.log($scope.tqq);
         var data = QuestionService.submit($scope.tqq);
         //alert(id);
@@ -55,7 +60,7 @@ app.controller('QuestionTakeCtrl',function($scope, QuestionService, ExamService,
 
     $scope.finish = function() {
         ExamService.finish();
-        $rootScope.goState('app.completed_exams');
+
     };
 
     $scope.review = function() {
@@ -85,6 +90,11 @@ app.controller('QuestionTakeCtrl',function($scope, QuestionService, ExamService,
     //         });
     //     });
     // });
+
+    if ( $rootScope.timeleft <= 0 ) {
+        alert('测验已超时！');
+        $scope.finish();
+    }
 
 });
 

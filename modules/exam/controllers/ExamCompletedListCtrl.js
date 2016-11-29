@@ -13,16 +13,7 @@ app.controller('ExamCompletedListCtrl', function ($scope, ExamService, resolvedI
 
     $scope.take = function(id) {
         //alert(id);
-        ExamService.take(id).then(function (data) {
-            $rootScope.tqId = data.id;
-            $rootScope.tqqs = data.testerQuizQuestions;
-            $rootScope.timeleft = data.timer;
-            console.log($rootScope.timeleft);
-            //$scope.exams = data;
-            //$scope.pagination = $scope.exams.metadata;
-            //alert(data.timer);
-            $rootScope.goStateWithParam('app.takeQuestion', {id:0});
-        });
+        ExamService.take(id);
 
     }
 

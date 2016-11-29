@@ -4,13 +4,11 @@
 var db = null;
 
 app
-    .run(function ($ionicPlatform, $rootScope, $stateParams, $state, Restangular, ionicToast, $cordovaNetwork, $cordovaSQLite, $ionicHistory,$ionicPopup) {
+    .constant("webroot",'http://angular.cnhost.gougu.com/')
+    .run(function ($ionicPlatform, $rootScope, $stateParams, $state, Restangular, ionicToast, webroot, $cordovaNetwork, $cordovaSQLite, $ionicHistory,$ionicPopup) {
         /* API Base url to access to files or image */
-        $rootScope.webRoot = 'http://angular.cnhost.gougu.com/';
+        $rootScope.webRoot = webroot;
         $rootScope.imageRoot = $rootScope.webRoot+  'uploads/images/';
-        $rootScope.ngLaravelBackEndFileURL = 'http://188.40.252.106/ng-laravel/v1.3/laravel-backend/public/uploads/';
-        $rootScope.ngLaravelUploadSrv = 'http://188.40.252.106/ng-laravel/v1.3/laravel-backend/public/api/uploadimage';
-        $rootScope.ngLaravelDeleteImageSrv = 'http://188.40.252.106/ng-laravel/v1.3/laravel-backend/public/api/deleteimage/';
 
         // add listener for change page title and parent menu activation
         $rootScope.$state = $state;
@@ -47,6 +45,10 @@ app
         return isCorrectAnswer;
       };
 
+      $rootScope.goBack = function() {
+
+            $ionicHistory.goBack();
+        };
 
       // because my back-end is multilingual, we should set default language
         Restangular.setDefaultRequestParams({_format: 'json'});
@@ -94,21 +96,24 @@ app
                 ionicToast.show('Please check your internet connection and try again.', 'bottom', true, 5000);
             }
 
-            // cordova SQLite setup
-            $ionicPlatform.ready(function () {
-                db = $cordovaSQLite.openDB({name: "nglaravel.db", location: 'default'});// database file name is 'nglaravel'
-                $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS people (id integer primary key, firstname text, lastname text)");
-            });
+
         });
     })
 
-    .config(function ($stateProvider, $urlRouterProvider, $authProvider, RestangularProvider, $ionicConfigProvider) {
+    .config(function ($stateProvider, $urlRouterProvider, $sceDelegateProvider, $authProvider, RestangularProvider, $ionicConfigProvider, webroot) {
+
+        $sceDelegateProvider.resourceUrlWhitelist([
+            // Allow same origin resource loads.
+            'self',
+            // Allow loading from our assets domain.  Notice the difference between * and **.
+            webroot + '**',
+        ]);
 
         /**
          *
          *  ngAA Config
          */
-        $authProvider.signinUrl = 'http://angular.cnhost.gougu.com/app_dev.php/api/login_check';
+        $authProvider.signinUrl = webroot + 'api/login_check';
         $authProvider.signinState = 'login';
         $authProvider.signinRoute = '/login';
         $authProvider.signinTemplateUrl = 'shared/views/login.html';
@@ -119,7 +124,7 @@ app
          *
          * Restangular API URL
          */
-        RestangularProvider.setBaseUrl('http://angular.cnhost.gougu.com/app_dev.php/api');
+        RestangularProvider.setBaseUrl(webroot + 'api');
         /* force Restangular's getList to work with Laravel 5's pagination object  */
         RestangularProvider.addResponseInterceptor(parseApiResponse);
         function parseApiResponse(data, operation) {
@@ -287,4 +292,19 @@ app
                 }]
             }
           })
-    });
+    })
+    .directive('backButton', function(){
+        return {
+            restrict: 'A',
+
+            link: function(scope, element, attrs) {
+                element.bind('click', goBack);
+
+                function goBack() {
+                    history.back();
+                    scope.$apply();
+                }
+            }
+        }
+    })
+;

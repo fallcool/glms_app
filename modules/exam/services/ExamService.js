@@ -15,11 +15,7 @@ angular.module('ng-laravel').service('ExamService', function($rootScope, $state,
      */
     this.cachedList = function() {
         // GET /api/exam
-        if (!examsCache.get('list')) {
-            return this.list();
-        } else{
-            return examsCache.get('list');
-        }
+        return this.list();
     };
 
 
@@ -78,9 +74,23 @@ angular.module('ng-laravel').service('ExamService', function($rootScope, $state,
     this.take = function(id) {
         // GET /api/exam/:id
         //alert(id);Restangular.one("accounts", 123).customGET("messages")
-        var data = Restangular.one("testerquiz", id).customGET("take");
+        var conn = Restangular.one("testerquiz", id).customGET("take");
 
-
+        conn.then(function (data) {
+            if (typeof data.message !==  'undefined' ) {
+                alert(data.message);
+            } else {
+                $rootScope.tqId = data.id;
+                $rootScope.tqqs = data.testerQuizQuestions;
+                $rootScope.timeleft = data.timer;
+                $rootScope.quiz = data.quiz;
+                console.log($rootScope.timeleft);
+                //$scope.exams = data;
+                //$scope.pagination = $scope.exams.metadata;
+                //alert(data.timer);
+                $rootScope.goStateWithParam('app.takeQuestion', {id:0});
+            }
+        });
         //alert(data.toString());
         //goStateWithParam('app.takeQuestion', {'id':data.id, 'timer':data.timer});
 
@@ -90,7 +100,7 @@ angular.module('ng-laravel').service('ExamService', function($rootScope, $state,
         //examsCache.put('show'+id,data);
         //$rootScope.goStateWithParam('app.showExam', {id:id});
 
-        return data;
+        //return data;
     };
 
     this.showQuiz = function(id) {
@@ -110,7 +120,7 @@ angular.module('ng-laravel').service('ExamService', function($rootScope, $state,
         });
         console.log(answers);
         Restangular.one("testerquiz", $rootScope.tqId).customPOST(answers, "finish").then(function(data) {
-            return data;
+            $rootScope.goState('app.completed_exams');
         },function(response) {
             return response;
         });

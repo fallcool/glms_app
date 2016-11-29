@@ -1,14 +1,8 @@
 <ion-nav-bar class="bar-assertive" style="background-color: #B71C1C;" >
-  <ion-nav-buttons side="left">
-    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-    </button>
-  </ion-nav-buttons>
   <ion-nav-title>
     {{quiz.title}}
   </ion-nav-title>
-  <ion-nav-buttons side="right" >
-    <button class="button button-icon button-clear ion-android-more-vertical" ng-click="popover.show($event)"></button>
-  </ion-nav-buttons>
+
 </ion-nav-bar>
 <ion-view>
   <ion-content class="has-header">
@@ -24,10 +18,15 @@
         <button ng-click="finish()" class="button icon-right ion-archive button-energized">交卷</button>
         <h4 class="border-top"> {{tqq.question.title}}</h4>
         <div ng-switch on="tqq.question.question_type">
-          <div ng-switch-default class="radio-container">
-            <md-radio-group ng-model="tqq.answer">
-              <md-radio-button ng-repeat="choice in tqq.question.choices" item="choice" value="{{choice.id}}">{{choice.title}}</md-radio-button>
-            </md-radio-group>
+          <div ng-switch-default class="item">
+            <div ng-repeat="choice in tqq.question.choices" item="choice">
+              <label >
+                <input type="radio" ng-model="tqq.answer" ng-value="choice.id">
+                {{choice.title}}
+              </label>
+            </div>
+
+
           </div>
 
 

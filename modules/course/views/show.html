@@ -6,9 +6,6 @@
   <ion-nav-title>
     课程详情
   </ion-nav-title>
-  <ion-nav-buttons side="right" >
-    <button class="button button-icon button-clear ion-android-more-vertical" ng-click="popover.show($event)"></button>
-  </ion-nav-buttons>
 </ion-nav-bar>
 <ion-view>
   <ion-content class="has-header">
@@ -37,7 +34,7 @@
         {{chapter.title}}
         <div ng-repeat="kejian in chapter.kejians" item="kejian" class="item item-button-right">
           {{ kejian.title }}
-          <button class="button button button-balanced ink" ng-click="course.sc && goStateWithParam('app.showKejian', {id:kejian.id})">
+          <button  ng-show="course.sc != null" class="button button button-balanced ink" ng-click="showKejian(kejian)">
             阅读
           </button>
         </div>
