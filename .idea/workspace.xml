@@ -2,109 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e3ee66-ee1b-4d19-9de4-fd1bb534550b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icons/android/144X144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icons/android/36X36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icons/android/48X48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icons/android/72X72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icons/android/96X96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-cache/angular-cache.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-img-fallback/angular.dcb-img-fallback.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-jwt/angular-jwt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-moment/angular-moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ion-autocomplete/css/ion-autocomplete.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ion-autocomplete/js/ion-autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic-material/css/ionic.material.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic-material/js/ionic.material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic-material/js/ionic.material.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/css/ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular-ui/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular-ui/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_action-sheet.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_backdrop.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_badge.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_button-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_button.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_checkbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_form.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_items.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_platform.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_radio.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_refresher.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_slide-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_slides.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_spinner.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_toggle.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_transitions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_util.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionic.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionic.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionicons/_ionicons-font.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionicons/_ionicons-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionicons/_ionicons-variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionicons/ionicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/moment/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ng-storage/ngStorage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ngCordova/ng-cordova-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ngCordova/ng-cordova-mocks.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ngCordova/ng-cordova.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/restangular/restangular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/underscore/js/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/1600X960.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/426X320.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/470X320.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/640X480.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/960X1600.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/960X720.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/splash/android/README.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.router.js" afterPath="$PROJECT_DIR$/js/config.router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/controllers/CourseListCtrl.js" afterPath="$PROJECT_DIR$/modules/course/controllers/CourseListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/controllers/CourseShowCtrl.js" afterPath="$PROJECT_DIR$/modules/course/controllers/CourseShowCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/views/lists.html" afterPath="$PROJECT_DIR$/modules/course/views/lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/views/show.html" afterPath="$PROJECT_DIR$/modules/course/views/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/course/views/showKejian.html" afterPath="$PROJECT_DIR$/modules/course/views/showKejian.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/controllers/ExamCompletedListCtrl.js" afterPath="$PROJECT_DIR$/modules/exam/controllers/ExamCompletedListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/controllers/ExamListCtrl.js" afterPath="$PROJECT_DIR$/modules/exam/controllers/ExamListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/controllers/QuestionTakeCtrl.js" afterPath="$PROJECT_DIR$/modules/exam/controllers/QuestionTakeCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/services/ExamService.js" afterPath="$PROJECT_DIR$/modules/exam/services/ExamService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/completed_lists.html" afterPath="$PROJECT_DIR$/modules/exam/views/completed_lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/lists.html" afterPath="$PROJECT_DIR$/modules/exam/views/lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/questions.html" afterPath="$PROJECT_DIR$/modules/exam/views/questions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/showQuiz.html" afterPath="$PROJECT_DIR$/modules/exam/views/showQuiz.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/exam/views/takeQuestion.html" afterPath="$PROJECT_DIR$/modules/exam/views/takeQuestion.html" />
     </list>
     <ignored path="glms_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -199,21 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="95">
+              <caret line="5" column="107" selection-start-line="5" selection-start-column="107" selection-end-line="5" selection-end-column="107" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -256,8 +155,8 @@
         <option value="$PROJECT_DIR$/modules/exam/controllers/QuestionTakeCtrl.js" />
         <option value="$PROJECT_DIR$/modules/exam/services/ExamService.js" />
         <option value="$PROJECT_DIR$/js/config.router.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -555,12 +454,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480305361259</updated>
       <workItem from="1480305364556" duration="16103000" />
-      <workItem from="1480386922513" duration="10368000" />
+      <workItem from="1480386922513" duration="11055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26471000" />
+    <option name="totallyTimeSpent" value="27158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1931" height="1056" extended-state="0" />
@@ -870,18 +769,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="269">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="95">
+          <caret line="5" column="107" selection-start-line="5" selection-start-column="107" selection-end-line="5" selection-end-column="107" />
           <folding />
         </state>
       </provider>

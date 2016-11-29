@@ -29,7 +29,7 @@
 	<preference name='phonegap-version' value='cli-6.3.0' /> <!-- Version of PhoneGap to use -->
 	<!-- How long to display a splash screen on app open (in milliseconds) -->
 	<preference name="splash-screen-duration" value="3000" /> <!-- optional -->
-	
+
 	<!-- Icons for iOS 7.0+, Android, Windows Phone -->
 	<icon src="icon.png" />  <!-- Icon in the root directory is always required, all others optional -->
 	<!-- iPhone 6 / 6+ -->
