@@ -19,11 +19,12 @@
         <h4 class="border-top"> {{tqq.question.title}}</h4>
         <div ng-switch on="tqq.question.question_type">
           <div ng-switch-default class="item">
-            <div ng-repeat="choice in tqq.question.choices" item="choice">
-              <label >
+            <div class="item" ng-repeat="choice in tqq.question.choices" item="choice">
+              <label class="">
                 <input type="radio" ng-model="tqq.answer" ng-value="choice.id">
                 {{choice.title}}
               </label>
+
             </div>
 
 

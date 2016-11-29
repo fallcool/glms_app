@@ -1,0 +1,83 @@
+.badge {
+    font-size: 12px;
+	}
+
+h5{
+margin-top: 0;
+font-size: 15px;
+}
+
+.neirong{
+	margin: -2px 16px 16px 16px!important;
+}
+
+.border-top {
+    border-top: 1px solid #ccc;
+    padding-top: 22px;
+	padding-bottom:8px;
+}
+
+.item-checkbox {
+    padding-left: 50px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.item-button-right > .button, .item-button-right .item-content > .button, .item-button-right > .buttons, .item-button-right .item-content > .buttons {
+    font-size: 14px;
+}
+
+
+.kaishi{
+	margin-top: 11px;
+}
+
+.item-body h1, .item-body h2, .item-body h3, .item-body h4, .item-body h5, .item-body h6, .item-body p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+h3, .h3 {
+    font-size: 20px;
+	margin-bottom: 8px;
+}
+
+h6, .h6 {
+    font-size: 16px;
+	color: #fff;
+	margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.biaotou{
+	margin-bottom: 20px;
+}
+
+.chengji{
+	font-size: 28px;
+	padding-top: 24px;
+}
+
+.row + .row {
+    margin-bottom: 10px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    padding-top: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.row  p{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+

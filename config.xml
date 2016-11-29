@@ -33,7 +33,7 @@
 				android:largeScreens="false"
 				android:smallScreens="false" />
 		<application android:theme="@android:style/Theme.NoTitleBar" >
-			
+
 		</application>
 	</gap:config-file>
 

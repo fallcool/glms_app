@@ -9,15 +9,17 @@
 </ion-nav-bar>
 <ion-view>
   <ion-content class="has-header">
-    <div class="list" ng-repeat="course in courses.entities" item="course">
-      <div ui-sref="app.showCourse({id:course.id})" class="card card-gallery item item-text-wrap">
-        <div class="ink dark-bg">
-          <img class="full-image" src="{{imageRoot + course.image}}">
-          <h2>{{course.title}}</h2>
-        </div>
-      </div>
+
 
     </div>
+    <div class="list card stable-bg" ng-repeat="course in courses.entities" item="course" ui-sref="app.showCourse({id:course.id})">
+      <img class="full-image" ng-src="{{imageRoot + course.image}}">
+      <div class="item item-body text-center">
+        <h2>{{course.title}}</h2>
+        <p>{{course.intro}}</p>
+      </div>
+    </div>
+
 
   </ion-content>
 </ion-view>

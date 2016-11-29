@@ -31,7 +31,10 @@
 
     <div class="list">
       <div ng-repeat="chapter in course.course.chapters" item="chapter">
-        {{chapter.title}}
+
+          <div class="bar bar-subheader bar-stable static text-center">
+              <strong class="title">{{chapter.title}} </strong>
+          </div>
         <div ng-repeat="kejian in chapter.kejians" item="kejian" class="item item-button-right">
           {{ kejian.title }}
           <button  ng-show="course.sc != null" class="button button button-balanced ink" ng-click="showKejian(kejian)">

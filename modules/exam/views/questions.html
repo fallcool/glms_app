@@ -1,54 +1,26 @@
-<!--View Information-->
-<!--View name : Online Course-->
-<!--State name : app.onlineCourse-->
-<!--URL : #app/onlineCourse-->
-
-<!--Online course section-->
-<ion-view title="e读书" id="online-course">
-    <ion-nav-bar class="themeColor">
-        <ion-nav-buttons side="left">
-            <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
-        </ion-nav-buttons>
-        <ion-nav-title>
-            e读书
-        </ion-nav-title>
-    </ion-nav-bar>
-    <ion-content id="online-course-content" class="has-header">
-        <!--toolbar section-->
-        <md-toolbar class="bar-subheader md-tall md-primary toolbar-online-course ">
-            <div>
-                <img src="img/logo/logo.png" class="user-img" style="background: rgb(230, 181, 0);"/>
-                <h1>勾股网络</h1>
-                <h2>http://www.gougu.com/</h2>
+<ion-nav-bar class="bar-assertive" style="background-color: #B71C1C;" >
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        {{quiz.title}}
+    </ion-nav-title>
+</ion-nav-bar>
+<ion-view>
+    <ion-content class="has-header">
+        <div ng-repeat="(k,tqq) in tqqs" item="tqq">
+            <div ng-show="tqq.description != null" class="bar bar-subheader bar-stable static text-center">
+                <strong class="title">{{ tqq.description }}</strong>
             </div>
-        </md-toolbar>
-        <!--end toolbar section-->
-        <div class="course-list">
-            <list>
-
-
-                <div ng-repeat="(k,tqq) in tqqs" item="tqq">
-                    <div ng-show="tqq.description != null">
-                        <md-divider></md-divider>
-
-                        <md-subheader>{{ tqq.description }}</md-subheader>
-                    </div>
-                    <md-list-item class="md-list-item-default" ng-click="goStateWithParam('app.takeQuestion', {id:k})" >
-                        <i class="ion-android-refresh"></i>
-
-                        <p>{{ tqq.question.title }}</p>
-                    </md-list-item>
+            <div class="neirong">
+                <div class="list">
+                    <h5 class="border-top" ng-click="goStateWithParam('app.takeQuestion', {id:k})"><span ng-show="tqq.answer !== undefined" class="badge badge-balanced">已回答</span> <span ng-show="tqq.answer === undefined"  class="badge badge-dark">未回答</span>{{ tqq.question.title }} </h5>
                 </div>
+            </div>
 
-                <!--content item section-->
-
-            <!--end content item section-->
         </div>
+
     </ion-content>
-    <!-- <div class="footer-fab-bar">
-        <a class="md-button md-accent md-fab fab-footer" aria-label="Add">
-            <i class="ion-android-star"></i>
-        </a>
-    </div> -->
 </ion-view>
-<!--end online course section-->
+
