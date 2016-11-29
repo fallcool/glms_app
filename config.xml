@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-            xmlns:android = "http://schemas.android.com/apk/res/android"
+
         id          = "com.gougu.glms"
         versionCode = "1"
         version     = "1.1.0">
@@ -25,17 +25,7 @@
     <gap:platform name="ios" />
 	<gap:platform name="android" />
 	<gap:platform name="winphone" />
-
-	<gap:config-file platform="android" parent="/manifest">
-
-		<supports-screens
-				android:xlargeScreens="false"
-				android:largeScreens="false"
-				android:smallScreens="false" />
-		<application android:theme="@android:style/Theme.NoTitleBar" >
-			<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
-		</application>
-	</gap:config-file>
+    
 
 	<!-- Build preferences for each platform. Too many to list here, see online PhoneGap docs for more. -->
 	<preference name='phonegap-version' value='cli-6.3.0' /> <!-- Version of PhoneGap to use -->
